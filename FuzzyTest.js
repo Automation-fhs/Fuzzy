@@ -1,5 +1,4 @@
 const Fuzzy = require(`${__dirname}/Fuzzy.js`);
-
 const posCP = [-35,-30,-5,0,5,30,35];
 const veloCP = [-500,-200,-50,0,50,200,500];
 const PWMVal = [255,255,255,255,200,100,0,-100,-200,-255,-255,-255,-255];
@@ -15,4 +14,4 @@ const FuzzyRules = [
 
 const Fuzzy1 = new Fuzzy(posCP,1,veloCP,10, FuzzyRules);
 
-console.log(Fuzzy1.Result(0,-100));
+console.log(Fuzzy1.Result(0,100));
